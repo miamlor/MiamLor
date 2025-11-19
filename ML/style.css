@@ -1,0 +1,98 @@
+/* Reset simple */
+body, h1, h2, h3, p, a {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Couleurs */
+  :root {
+    --primary: #f2a154;
+    --secondary: #294155;
+    --background: #fff;
+  }
+  
+  /* Body */
+  body {
+    background: var(--background);
+    color: var(--secondary);
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--primary);
+    color: #fff;
+  }
+  header .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #fff;
+    color: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Plats */
+  #plats {
+    padding: 2rem;
+  }
+  .plat-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .plat-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s;
+  }
+  .plat-card:hover {
+    transform: scale(1.05);
+  }
+  .plat-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .plat-card .btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    background: var(--primary);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Tracker */
+  #tracker {
+    padding: 2rem;
+    text-align: center;
+    background: #f9f9f9;
+    font-size: 1.2rem;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 1.5rem;
+    text-align: center;
+    background: var(--secondary);
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .plat-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
